@@ -18,13 +18,17 @@ const sendmail = (() => {
         showToast();
         console.log(message);
         window.location.href = '#contact-section';
+        return false; // cancela o refresh da página para o topo
       });
     }else{
       alert('Preencha todos os dados!');
+      window.location.href = '#contact-section';
+      return false; // cancela o refresh da página para o topo
     }
   } catch (e) {
     showToastErr();
     console.log('Erro ao enviar email: ', e);
     window.location.href = '#contact-section';
+    return false; // cancela o refresh da página para o topo
   }
 });
