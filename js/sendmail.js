@@ -3,6 +3,8 @@ const sendmail = (() => {
   var client_email = document.getElementById('client_email').value;
   var subject = document.getElementById('subj').value;
   var msg = document.getElementById('msg').value;
+  let hostname = window.location.hostname;
+  let pathname = window.location.pathname;
 
   try {
     Email.send({
@@ -14,11 +16,13 @@ const sendmail = (() => {
         Subject : `${subject}`,
         Body : `${msg}`
     }).then((message) => {
-      console.log(message);
       showToast();
+      console.log(message);
+      window.location.href = `https://${hostname}${pathname}#contact-section`;
     });
   } catch (e) {
-    console.log('Erro ao enviar email: ', e);
     showToastErr();
+    console.log('Erro ao enviar email: ', e);
+    window.location.href = `https://${hostname}${pathname}#contact-section`;
   }
 });
