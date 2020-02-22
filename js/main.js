@@ -455,3 +455,7 @@ function showToastErr(){
 
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000);
 }
+
+function GetCV(){
+  window.open(encodeURI('../docs/ENZOGEROLA_CV.pdf'));
+}
