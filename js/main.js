@@ -457,5 +457,5 @@ function showToastErr(){
 }
 
 function GetCV(){
-  window.open(encodeURI('../docs/ENZOGEROLA_CV.pdf'));
+  window.open(encodeURI('https://enzopg.github.io/EnzoGerola/docs/ENZOGEROLA_CV.pdf'));
 }
