@@ -9,7 +9,7 @@ const sendmail = (() => {
       Email.send({
           Host : "smtp.gmail.com",
           Username : "enzop.gerola@gmail.com",
-          Password : "@EnzoFatec990099",
+          Password : "@EnzoGerola1001",
           To : 'enzop.gerola@gmail.com',
           From : `${client_email}`,
           Subject : `${subject}`,
