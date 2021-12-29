@@ -415,6 +415,19 @@ mark,
   font-size: 90%;
   color: #6c757d; }
 
+.modal-dialog {
+  width: 100% !important;
+  height: 60% !important;
+  margin: 0;
+  padding: 0;
+}
+  
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+
 code {
   font-size: 87.5%;
   color: #e83e8c;
