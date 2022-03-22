@@ -496,6 +496,10 @@ function showVideo(project) {
 			folderToSrc = 'html_css_js';
 			videos.push(`${baseUrl}${folderToSrc}/MP_CreditPayment.mp4`);
 			break;
+		case 'sixth':
+			folderToSrc = 'laravel';
+			videos.push(`${baseUrl}${folderToSrc}/omnia_sistema_controle_estoque.mp4`);
+			break;
 	}
 
 	const container = document.querySelector('#video_rows');
